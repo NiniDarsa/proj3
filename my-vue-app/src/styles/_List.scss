@@ -1,0 +1,67 @@
+.list{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20rem;
+    height: 100%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.433);
+    overflow:scroll;
+    color:rgba(0, 0, 0, 0.796);
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.4s ease;
+
+   
+    .header{
+        margin: 1rem;
+      
+    }
+    img{
+        width: 30%;
+
+    }
+    .item{
+        padding: 1rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+     
+        &:hover{
+            background-color: rgba(0, 162, 255, 0.2);
+        }
+        .details{
+            padding-left: 1rem;
+        }
+        h1,h2{
+            font-size: 1.2rem;
+        }
+    }
+}
+.active{
+    transform: translateX(0%);
+    opacity: 1;
+}
+.selected{
+    background-color: lightblue;
+  }
+/*scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(128, 128, 128, 0.418); 
+    border-radius: 1px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128, 0.339); 
+    border-radius: 1px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ebdede46; 
+  }
